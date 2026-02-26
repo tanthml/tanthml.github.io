@@ -1,0 +1,32 @@
+title: Tan Tran
+tagline: AI Engineer · Researcher · Lecturer
+description: >-
+  Personal blog and portfolio of Tan Tran — AI Specialist at Vingroup,
+  Lecturer at HUB Vietnam, and ML practitioner with experience across
+  fintech, smart city, and aviation AI.
+baseurl: ""
+url: "https://tanthml.github.io"
+
+author:
+  name: Tan Tran
+  email: tanthm1102@gmail.com
+  github: tanthml
+
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - github-pages
+
+# Navigation
+header_pages:
+  - _pages/about.md
+  - _pages/publications.md
+
+# Minima theme settings
+minima:
+  skin: dark
+  social_links:
+    - { platform: github, user_url: "https://github.com/tanthml" }
+    - { platform: email, user_url: "mailto:tanthm1102@gmail.com" }
