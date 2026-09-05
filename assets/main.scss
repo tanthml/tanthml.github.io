@@ -104,6 +104,14 @@ table td {
   color: var(--text);
 }
 
+table tr:nth-child(even) {
+  background-color: var(--code-bg);
+}
+
+table th {
+  background-color: var(--border);
+}
+
 .theme-toggle {
   position: fixed;
   top: 16px;
