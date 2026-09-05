@@ -1,0 +1,140 @@
+---
+---
+
+@import "minima";
+
+/* This repo's pinned minima (2.5.1, via the github-pages gem) has no
+   built-in skin/dark-mode support at all -- the `minima: skin: dark`
+   config key is a silent no-op on this version. Dark-by-default is
+   hand-rolled here instead, with data-theme="light" as the opt-out. */
+
+:root {
+  --bg: #0d0f14;
+  --text: #e6e6e6;
+  --grey: #a3a3a3;
+  --link: #6fd7cf;
+  --border: #2a2d34;
+  --code-bg: #1a1c22;
+}
+
+:root[data-theme="light"] {
+  --bg: #fdfdfd;
+  --text: #111111;
+  --grey: #767676;
+  --link: #2a7ae2;
+  --border: #e8e8e8;
+  --code-bg: #ffffff;
+}
+
+body {
+  position: relative;
+  background-color: var(--bg);
+  color: var(--text);
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* The Big Dipper / Polaris starfield sits fixed behind everything. In
+   light mode there's no second art file to maintain -- it's the same
+   SVG with an invert filter, turning bright stars on black into a
+   readable dark-line chart on a light page. */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: url("{{ '/assets/stars-bg.svg' | relative_url }}");
+  background-repeat: no-repeat;
+  background-position: center 15%;
+  background-size: cover;
+  opacity: 0.9;
+  z-index: -1;
+  pointer-events: none;
+}
+
+:root[data-theme="light"] body::after {
+  filter: invert(0.93) hue-rotate(180deg);
+  opacity: 0.5;
+}
+
+.site-header,
+.site-footer {
+  border-color: var(--border);
+}
+
+.site-title,
+.site-nav .page-link,
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text);
+}
+
+.site-header svg {
+  fill: var(--text);
+}
+
+a {
+  color: var(--link);
+}
+
+.footer-col-wrapper,
+.footer-col,
+.post-meta {
+  color: var(--grey);
+}
+
+blockquote {
+  color: var(--grey);
+  border-left-color: var(--border);
+}
+
+pre,
+code {
+  background-color: var(--code-bg);
+  border-color: var(--border);
+  color: var(--text);
+}
+
+hr,
+table,
+table th,
+table td {
+  border-color: var(--border);
+}
+
+table th,
+table td {
+  color: var(--text);
+}
+
+table tr:nth-child(even) {
+  background-color: var(--code-bg);
+}
+
+table th {
+  background-color: var(--border);
+}
+
+.theme-toggle {
+  position: fixed;
+  top: 16px;
+  right: 16px;
+  z-index: 20;
+  width: 30px;
+  height: 30px;
+  border: none;
+  background: transparent;
+  font-size: 16px;
+  line-height: 1;
+  cursor: pointer;
+  color: var(--text);
+  opacity: 0.65;
+  transition: opacity 0.15s ease;
+}
+
+.theme-toggle:hover {
+  opacity: 1;
+}
+
+@media (max-width: 600px) {
+  body::after {
+    background-position: center 8%;
+  }
+}

@@ -1,0 +1,135 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" role="img" aria-label="The Big Dipper (chom sao Bac Dau) and an animated demonstration of how its two pointer stars locate Polaris, the North Star">
+  <defs>
+    <style>
+      .star-line { fill: none; stroke: #7f96b8; stroke-width: 1.2; opacity: 0.55; stroke-linecap: round; stroke-linejoin: round; }
+      .pointer-line { fill: none; stroke: #e8c76a; stroke-width: 1.6; opacity: 0.85; stroke-linecap: round; }
+      .dipper-star { fill: #eaf1ff; }
+      .label { font: 500 13px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; fill: #b9c4d6; letter-spacing: 0.02em; }
+      .label-polaris { font: 600 14px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; fill: #f4d47c; letter-spacing: 0.02em; }
+    </style>
+  </defs>
+
+  <!-- background starfield, real coordinates not required here (decorative depth only) -->
+  <circle cx="761.7" cy="41.5" r="1.1" fill="#ffffff" opacity="0.28"><animate attributeName="opacity" values="0.28;0.64;0.28" dur="3.2s" begin="0.7s" repeatCount="indefinite"/></circle>
+  <circle cx="56.9" cy="100.6" r="0.9" fill="#ffffff" opacity="0.31"><animate attributeName="opacity" values="0.31;0.66;0.31" dur="4.0s" begin="0.1s" repeatCount="indefinite"/></circle>
+  <circle cx="652.1" cy="209.6" r="1.6" fill="#ffffff" opacity="0.48"><animate attributeName="opacity" values="0.48;0.75;0.48" dur="3.3s" begin="4.3s" repeatCount="indefinite"/></circle>
+  <circle cx="510.2" cy="259.0" r="0.9" fill="#ffffff" opacity="0.28"><animate attributeName="opacity" values="0.28;0.54;0.28" dur="5.4s" begin="1.7s" repeatCount="indefinite"/></circle>
+  <circle cx="1003.1" cy="539.2" r="0.7" fill="#ffffff" opacity="0.54"><animate attributeName="opacity" values="0.54;0.85;0.54" dur="4.7s" begin="2.7s" repeatCount="indefinite"/></circle>
+  <circle cx="660.4" cy="733.3" r="1.6" fill="#ffffff" opacity="0.31"><animate attributeName="opacity" values="0.31;0.57;0.31" dur="5.2s" begin="1.8s" repeatCount="indefinite"/></circle>
+  <circle cx="787.1" cy="684.8" r="0.7" fill="#ffffff" opacity="0.36"><animate attributeName="opacity" values="0.36;0.68;0.36" dur="5.1s" begin="4.3s" repeatCount="indefinite"/></circle>
+  <circle cx="987.6" cy="159.9" r="1.1" fill="#ffffff" opacity="0.53"><animate attributeName="opacity" values="0.53;0.88;0.53" dur="3.1s" begin="1.3s" repeatCount="indefinite"/></circle>
+  <circle cx="726.6" cy="167.2" r="0.9" fill="#ffffff" opacity="0.55"><animate attributeName="opacity" values="0.55;0.9;0.55" dur="3.0s" begin="1.9s" repeatCount="indefinite"/></circle>
+  <circle cx="997.7" cy="687.4" r="0.9" fill="#ffffff" opacity="0.37"><animate attributeName="opacity" values="0.37;0.63;0.37" dur="5.0s" begin="4.0s" repeatCount="indefinite"/></circle>
+  <circle cx="1079.2" cy="507.8" r="1.1" fill="#ffffff" opacity="0.52"><animate attributeName="opacity" values="0.52;0.87;0.52" dur="3.1s" begin="2.5s" repeatCount="indefinite"/></circle>
+  <circle cx="185.7" cy="140.1" r="1.6" fill="#ffffff" opacity="0.38"><animate attributeName="opacity" values="0.38;0.72;0.38" dur="4.1s" begin="3.7s" repeatCount="indefinite"/></circle>
+  <circle cx="439.9" cy="877.7" r="0.9" fill="#ffffff" opacity="0.26"><animate attributeName="opacity" values="0.26;0.53;0.26" dur="4.0s" begin="0.5s" repeatCount="indefinite"/></circle>
+  <circle cx="747.8" cy="701.2" r="1.3" fill="#ffffff" opacity="0.43"><animate attributeName="opacity" values="0.43;0.75;0.43" dur="4.3s" begin="1.9s" repeatCount="indefinite"/></circle>
+  <circle cx="311.6" cy="495.8" r="0.7" fill="#ffffff" opacity="0.52"><animate attributeName="opacity" values="0.52;0.88;0.52" dur="4.5s" begin="0.6s" repeatCount="indefinite"/></circle>
+  <circle cx="911.6" cy="312.6" r="1.1" fill="#ffffff" opacity="0.54"><animate attributeName="opacity" values="0.54;0.92;0.54" dur="3.8s" begin="2.3s" repeatCount="indefinite"/></circle>
+  <circle cx="325.5" cy="450.5" r="0.9" fill="#ffffff" opacity="0.44"><animate attributeName="opacity" values="0.44;0.82;0.44" dur="4.0s" begin="0.5s" repeatCount="indefinite"/></circle>
+  <circle cx="608.9" cy="191.1" r="1.1" fill="#ffffff" opacity="0.48"><animate attributeName="opacity" values="0.48;0.81;0.48" dur="4.8s" begin="2.7s" repeatCount="indefinite"/></circle>
+  <circle cx="20.7" cy="298.8" r="0.7" fill="#ffffff" opacity="0.55"><animate attributeName="opacity" values="0.55;0.92;0.55" dur="2.8s" begin="1.8s" repeatCount="indefinite"/></circle>
+  <circle cx="297.8" cy="227.1" r="1.6" fill="#ffffff" opacity="0.4"><animate attributeName="opacity" values="0.4;0.66;0.4" dur="5.3s" begin="0.4s" repeatCount="indefinite"/></circle>
+  <circle cx="902.3" cy="678.6" r="0.9" fill="#ffffff" opacity="0.3"><animate attributeName="opacity" values="0.3;0.63;0.3" dur="4.5s" begin="4.7s" repeatCount="indefinite"/></circle>
+  <circle cx="723.6" cy="849.4" r="1.6" fill="#ffffff" opacity="0.46"><animate attributeName="opacity" values="0.46;0.77;0.46" dur="4.8s" begin="3.4s" repeatCount="indefinite"/></circle>
+  <circle cx="799.2" cy="341.1" r="1.6" fill="#ffffff" opacity="0.27"><animate attributeName="opacity" values="0.27;0.52;0.27" dur="3.9s" begin="1.2s" repeatCount="indefinite"/></circle>
+  <circle cx="28.3" cy="628.7" r="0.7" fill="#ffffff" opacity="0.51"><animate attributeName="opacity" values="0.51;0.77;0.51" dur="3.2s" begin="4.5s" repeatCount="indefinite"/></circle>
+  <circle cx="296.1" cy="595.3" r="0.9" fill="#ffffff" opacity="0.51"><animate attributeName="opacity" values="0.51;0.85;0.51" dur="4.1s" begin="3.6s" repeatCount="indefinite"/></circle>
+  <circle cx="301.9" cy="426.8" r="1.3" fill="#ffffff" opacity="0.38"><animate attributeName="opacity" values="0.38;0.69;0.38" dur="3.1s" begin="0.5s" repeatCount="indefinite"/></circle>
+  <circle cx="801.1" cy="866.4" r="0.7" fill="#ffffff" opacity="0.49"><animate attributeName="opacity" values="0.49;0.76;0.49" dur="2.7s" begin="3.6s" repeatCount="indefinite"/></circle>
+  <circle cx="242.2" cy="481.2" r="0.9" fill="#ffffff" opacity="0.32"><animate attributeName="opacity" values="0.32;0.71;0.32" dur="3.8s" begin="1.4s" repeatCount="indefinite"/></circle>
+  <circle cx="534.0" cy="760.8" r="1.6" fill="#ffffff" opacity="0.41"><animate attributeName="opacity" values="0.41;0.66;0.41" dur="2.8s" begin="3.3s" repeatCount="indefinite"/></circle>
+  <circle cx="128.2" cy="668.1" r="0.9" fill="#ffffff" opacity="0.31"><animate attributeName="opacity" values="0.31;0.62;0.31" dur="3.0s" begin="2.4s" repeatCount="indefinite"/></circle>
+  <circle cx="88.0" cy="345.9" r="1.3" fill="#ffffff" opacity="0.39"><animate attributeName="opacity" values="0.39;0.7;0.39" dur="3.3s" begin="3.9s" repeatCount="indefinite"/></circle>
+  <circle cx="1130.5" cy="876.1" r="1.6" fill="#ffffff" opacity="0.31"><animate attributeName="opacity" values="0.31;0.59;0.31" dur="4.5s" begin="2.4s" repeatCount="indefinite"/></circle>
+  <circle cx="87.8" cy="652.7" r="0.7" fill="#ffffff" opacity="0.43"><animate attributeName="opacity" values="0.43;0.76;0.43" dur="4.7s" begin="0.3s" repeatCount="indefinite"/></circle>
+  <circle cx="1009.2" cy="155.4" r="1.6" fill="#ffffff" opacity="0.43"><animate attributeName="opacity" values="0.43;0.78;0.43" dur="2.7s" begin="0.9s" repeatCount="indefinite"/></circle>
+  <circle cx="292.8" cy="123.1" r="1.6" fill="#ffffff" opacity="0.44"><animate attributeName="opacity" values="0.44;0.75;0.44" dur="3.2s" begin="3.0s" repeatCount="indefinite"/></circle>
+  <circle cx="1104.3" cy="195.7" r="1.1" fill="#ffffff" opacity="0.45"><animate attributeName="opacity" values="0.45;0.74;0.45" dur="3.2s" begin="2.0s" repeatCount="indefinite"/></circle>
+  <circle cx="386.8" cy="666.6" r="0.7" fill="#ffffff" opacity="0.42"><animate attributeName="opacity" values="0.42;0.68;0.42" dur="2.5s" begin="3.1s" repeatCount="indefinite"/></circle>
+  <circle cx="173.6" cy="320.1" r="0.7" fill="#ffffff" opacity="0.3"><animate attributeName="opacity" values="0.3;0.68;0.3" dur="5.1s" begin="1.8s" repeatCount="indefinite"/></circle>
+  <circle cx="836.1" cy="546.0" r="1.6" fill="#ffffff" opacity="0.34"><animate attributeName="opacity" values="0.34;0.69;0.34" dur="2.5s" begin="4.1s" repeatCount="indefinite"/></circle>
+  <circle cx="1109.2" cy="135.5" r="0.7" fill="#ffffff" opacity="0.3"><animate attributeName="opacity" values="0.3;0.59;0.3" dur="5.2s" begin="3.7s" repeatCount="indefinite"/></circle>
+  <circle cx="264.3" cy="314.9" r="1.1" fill="#ffffff" opacity="0.52"><animate attributeName="opacity" values="0.52;0.78;0.52" dur="4.0s" begin="1.3s" repeatCount="indefinite"/></circle>
+  <circle cx="755.8" cy="733.2" r="0.7" fill="#ffffff" opacity="0.44"><animate attributeName="opacity" values="0.44;0.73;0.44" dur="2.5s" begin="3.9s" repeatCount="indefinite"/></circle>
+  <circle cx="879.8" cy="494.4" r="1.3" fill="#ffffff" opacity="0.53"><animate attributeName="opacity" values="0.53;0.88;0.53" dur="4.2s" begin="0.6s" repeatCount="indefinite"/></circle>
+  <circle cx="192.9" cy="51.0" r="1.1" fill="#ffffff" opacity="0.29"><animate attributeName="opacity" values="0.29;0.59;0.29" dur="4.2s" begin="0.7s" repeatCount="indefinite"/></circle>
+  <circle cx="1062.8" cy="704.7" r="0.7" fill="#ffffff" opacity="0.32"><animate attributeName="opacity" values="0.32;0.59;0.32" dur="5.2s" begin="1.1s" repeatCount="indefinite"/></circle>
+  <circle cx="924.9" cy="780.4" r="1.3" fill="#ffffff" opacity="0.53"><animate attributeName="opacity" values="0.53;0.82;0.53" dur="5.4s" begin="3.7s" repeatCount="indefinite"/></circle>
+  <circle cx="208.5" cy="707.9" r="0.9" fill="#ffffff" opacity="0.47"><animate attributeName="opacity" values="0.47;0.77;0.47" dur="5.1s" begin="0.1s" repeatCount="indefinite"/></circle>
+  <circle cx="1099.7" cy="709.9" r="0.9" fill="#ffffff" opacity="0.28"><animate attributeName="opacity" values="0.28;0.66;0.28" dur="3.3s" begin="3.9s" repeatCount="indefinite"/></circle>
+  <circle cx="1016.0" cy="211.3" r="1.3" fill="#ffffff" opacity="0.51"><animate attributeName="opacity" values="0.51;0.79;0.51" dur="3.5s" begin="4.1s" repeatCount="indefinite"/></circle>
+  <circle cx="785.6" cy="362.7" r="1.1" fill="#ffffff" opacity="0.33"><animate attributeName="opacity" values="0.33;0.68;0.33" dur="5.1s" begin="4.8s" repeatCount="indefinite"/></circle>
+  <circle cx="483.6" cy="863.8" r="1.6" fill="#ffffff" opacity="0.51"><animate attributeName="opacity" values="0.51;0.8;0.51" dur="3.5s" begin="0.1s" repeatCount="indefinite"/></circle>
+  <circle cx="693.5" cy="865.9" r="0.7" fill="#ffffff" opacity="0.47"><animate attributeName="opacity" values="0.47;0.77;0.47" dur="2.8s" begin="2.2s" repeatCount="indefinite"/></circle>
+  <circle cx="723.2" cy="459.8" r="1.3" fill="#ffffff" opacity="0.26"><animate attributeName="opacity" values="0.26;0.58;0.26" dur="5.2s" begin="1.0s" repeatCount="indefinite"/></circle>
+  <circle cx="816.8" cy="828.6" r="0.9" fill="#ffffff" opacity="0.45"><animate attributeName="opacity" values="0.45;0.75;0.45" dur="3.6s" begin="0.3s" repeatCount="indefinite"/></circle>
+  <circle cx="384.1" cy="749.3" r="1.1" fill="#ffffff" opacity="0.35"><animate attributeName="opacity" values="0.35;0.7;0.35" dur="4.0s" begin="3.3s" repeatCount="indefinite"/></circle>
+  <circle cx="663.1" cy="185.0" r="1.3" fill="#ffffff" opacity="0.43"><animate attributeName="opacity" values="0.43;0.73;0.43" dur="4.5s" begin="4.5s" repeatCount="indefinite"/></circle>
+  <circle cx="655.6" cy="20.3" r="1.1" fill="#ffffff" opacity="0.43"><animate attributeName="opacity" values="0.43;0.73;0.43" dur="3.1s" begin="3.9s" repeatCount="indefinite"/></circle>
+  <circle cx="1133.4" cy="652.9" r="0.7" fill="#ffffff" opacity="0.44"><animate attributeName="opacity" values="0.44;0.7;0.44" dur="3.4s" begin="3.3s" repeatCount="indefinite"/></circle>
+  <circle cx="1124.3" cy="222.0" r="1.1" fill="#ffffff" opacity="0.26"><animate attributeName="opacity" values="0.26;0.55;0.26" dur="3.2s" begin="1.0s" repeatCount="indefinite"/></circle>
+  <circle cx="571.2" cy="750.8" r="0.7" fill="#ffffff" opacity="0.42"><animate attributeName="opacity" values="0.42;0.78;0.42" dur="3.9s" begin="4.4s" repeatCount="indefinite"/></circle>
+  <circle cx="465.4" cy="363.7" r="0.9" fill="#ffffff" opacity="0.48"><animate attributeName="opacity" values="0.48;0.85;0.48" dur="4.5s" begin="0.0s" repeatCount="indefinite"/></circle>
+  <circle cx="143.6" cy="385.6" r="0.9" fill="#ffffff" opacity="0.39"><animate attributeName="opacity" values="0.39;0.72;0.39" dur="4.9s" begin="3.5s" repeatCount="indefinite"/></circle>
+  <circle cx="1084.3" cy="124.4" r="0.9" fill="#ffffff" opacity="0.55"><animate attributeName="opacity" values="0.55;0.89;0.55" dur="4.9s" begin="3.3s" repeatCount="indefinite"/></circle>
+  <circle cx="1122.0" cy="786.6" r="1.6" fill="#ffffff" opacity="0.38"><animate attributeName="opacity" values="0.38;0.77;0.38" dur="4.9s" begin="4.5s" repeatCount="indefinite"/></circle>
+  <circle cx="537.3" cy="156.9" r="1.3" fill="#ffffff" opacity="0.5"><animate attributeName="opacity" values="0.5;0.79;0.5" dur="3.9s" begin="3.8s" repeatCount="indefinite"/></circle>
+  <circle cx="922.1" cy="436.8" r="0.9" fill="#ffffff" opacity="0.34"><animate attributeName="opacity" values="0.34;0.63;0.34" dur="3.3s" begin="0.4s" repeatCount="indefinite"/></circle>
+  <circle cx="390.9" cy="484.5" r="0.9" fill="#ffffff" opacity="0.3"><animate attributeName="opacity" values="0.3;0.58;0.3" dur="3.0s" begin="1.9s" repeatCount="indefinite"/></circle>
+  <circle cx="501.2" cy="304.6" r="1.3" fill="#ffffff" opacity="0.38"><animate attributeName="opacity" values="0.38;0.77;0.38" dur="3.7s" begin="1.0s" repeatCount="indefinite"/></circle>
+  <circle cx="1013.8" cy="678.4" r="1.3" fill="#ffffff" opacity="0.34"><animate attributeName="opacity" values="0.34;0.65;0.34" dur="3.9s" begin="4.7s" repeatCount="indefinite"/></circle>
+  <circle cx="1054.3" cy="738.7" r="1.6" fill="#ffffff" opacity="0.43"><animate attributeName="opacity" values="0.43;0.71;0.43" dur="4.7s" begin="2.7s" repeatCount="indefinite"/></circle>
+
+  <!-- ============ Big Dipper (chom sao Bac Dau), real RA/Dec, ============
+       polar-azimuthal projection centered on the true north celestial pole:
+       r = (90 - Dec) * 6.2 px/deg, theta = RA. Verified against Wikipedia
+       infobox coordinates for all 7 stars (J2000).
+
+       Rotated 90deg, scaled up 1.8x about its own centroid, and shifted
+       to the left margin via a single group transform: the star/line
+       coordinates below are untouched so they still match the RA/Dec math
+       above; only the <g> repositions/resizes them. Polaris itself is laid
+       out separately in the right margin (see below) rather than at its
+       true relative distance, so the pointer line reads clearly across
+       the page instead of the two ending up just ~180px apart. -->
+  <g transform="translate(-408.0,-198.24) rotate(90,578.0,664.8) translate(578.0,664.8) scale(1.8) translate(-578.0,-664.8)">
+
+    <!-- asterism outline: handle (Alkaid-Mizar-Alioth-Megrez) + bowl (Megrez-Dubhe-Merak-Phecda-Megrez) -->
+    <path class="star-line" d="M485.9,685.0 L522.1,663.0 L550.7,665.2 L586.3,663.9 L642.6,629.9 L652.3,661.8 L606.1,685.0 L586.3,663.9" />
+
+    <!-- the two pointer stars, highlighted -->
+    <line class="pointer-line" x1="652.3" y1="661.8" x2="642.6" y2="629.9" />
+
+    <!-- dipper stars, sized roughly by real apparent magnitude -->
+    <circle class="dipper-star" cx="642.6" cy="629.9" r="4" />   <!-- Dubhe, mag 1.8 -->
+    <circle class="dipper-star" cx="652.3" cy="661.8" r="3.2" /> <!-- Merak, mag 2.4 -->
+    <circle class="dipper-star" cx="606.1" cy="685.0" r="3.2" /> <!-- Phecda, mag 2.4 -->
+    <circle class="dipper-star" cx="586.3" cy="663.9" r="2.4" /> <!-- Megrez, mag 3.3 -->
+    <circle class="dipper-star" cx="550.7" cy="665.2" r="4" />   <!-- Alioth, mag 1.8 -->
+    <circle class="dipper-star" cx="522.1" cy="663.0" r="3.5" /> <!-- Mizar, mag 2.1 -->
+    <circle class="dipper-star" cx="485.9" cy="685.0" r="3.8" /> <!-- Alkaid, mag 1.9 -->
+  </g>
+
+  <!-- animated pointer line: grows from the transformed Dubhe position
+       out to Polaris in the right margin, holds, fades, repeats. Lives
+       outside the <g> above since its target (Polaris) isn't part of
+       that transform. -->
+  <line x1="232.8" y1="582.9" x2="232.8" y2="582.9" stroke="#e8c76a" stroke-width="1.6" stroke-dasharray="3 4" opacity="0">
+    <animate attributeName="x2" values="232.8;232.8;1087;1087;232.8" keyTimes="0;0.05;0.45;0.85;1" dur="6s" repeatCount="indefinite" />
+    <animate attributeName="y2" values="582.9;582.9;380;380;582.9" keyTimes="0;0.05;0.45;0.85;1" dur="6s" repeatCount="indefinite" />
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.05;0.15;0.75;0.85;1" dur="6s" repeatCount="indefinite" />
+  </line>
+
+  <!-- Polaris: placed in the right margin, sized up a bit to match the larger dipper -->
+  <circle cx="1087" cy="380" r="11" fill="#f4d47c" opacity="0.18">
+    <animate attributeName="opacity" values="0.18;0.18;0.4;0.4;0.18;0.18" keyTimes="0;0.4;0.47;0.75;0.82;1" dur="6s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="1087" cy="380" r="5.5" fill="#f4d47c">
+    <animate attributeName="r" values="5.5;5.5;8.8;8.8;5.5;5.5" keyTimes="0;0.4;0.47;0.75;0.82;1" dur="6s" repeatCount="indefinite" />
+  </circle>
+
+  <!-- labels kept upright, centered under each cluster so they fit the narrow page margins -->
+  <text class="label" x="112" y="647" text-anchor="middle">Chòm Bắc Đẩu (Big Dipper)</text>
+  <text class="label-polaris" x="1087" y="418" text-anchor="middle">Polaris — Sao Bắc Cực</text>
+</svg>

@@ -21,8 +21,8 @@ plugins:
 
 # Navigation
 header_pages:
-  - _pages/about.md
-  - _pages/publications.md
+  - about.md
+  - publications.md
 
 # Minima theme settings
 minima:
