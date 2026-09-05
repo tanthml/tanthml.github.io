@@ -93,7 +93,7 @@
        out separately in the right margin (see below) rather than at its
        true relative distance, so the pointer line reads clearly across
        the page instead of the two ending up just ~180px apart. -->
-  <g transform="translate(-408.0,-94.8) rotate(90,578.0,664.8) translate(578.0,664.8) scale(1.8) translate(-578.0,-664.8)">
+  <g transform="translate(-408.0,-198.24) rotate(90,578.0,664.8) translate(578.0,664.8) scale(1.8) translate(-578.0,-664.8)">
 
     <!-- asterism outline: handle (Alkaid-Mizar-Alioth-Megrez) + bowl (Megrez-Dubhe-Merak-Phecda-Megrez) -->
     <path class="star-line" d="M485.9,685.0 L522.1,663.0 L550.7,665.2 L586.3,663.9 L642.6,629.9 L652.3,661.8 L606.1,685.0 L586.3,663.9" />
@@ -115,9 +115,9 @@
        out to Polaris in the right margin, holds, fades, repeats. Lives
        outside the <g> above since its target (Polaris) isn't part of
        that transform. -->
-  <line x1="232.8" y1="686.3" x2="232.8" y2="686.3" stroke="#e8c76a" stroke-width="1.6" stroke-dasharray="3 4" opacity="0">
+  <line x1="232.8" y1="582.9" x2="232.8" y2="582.9" stroke="#e8c76a" stroke-width="1.6" stroke-dasharray="3 4" opacity="0">
     <animate attributeName="x2" values="232.8;232.8;1087;1087;232.8" keyTimes="0;0.05;0.45;0.85;1" dur="6s" repeatCount="indefinite" />
-    <animate attributeName="y2" values="686.3;686.3;380;380;686.3" keyTimes="0;0.05;0.45;0.85;1" dur="6s" repeatCount="indefinite" />
+    <animate attributeName="y2" values="582.9;582.9;380;380;582.9" keyTimes="0;0.05;0.45;0.85;1" dur="6s" repeatCount="indefinite" />
     <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.05;0.15;0.75;0.85;1" dur="6s" repeatCount="indefinite" />
   </line>
 
@@ -130,6 +130,6 @@
   </circle>
 
   <!-- labels kept upright, centered under each cluster so they fit the narrow page margins -->
-  <text class="label" x="112" y="750" text-anchor="middle">Chòm Bắc Đẩu (Big Dipper)</text>
+  <text class="label" x="112" y="647" text-anchor="middle">Chòm Bắc Đẩu (Big Dipper)</text>
   <text class="label-polaris" x="1087" y="418" text-anchor="middle">Polaris — Sao Bắc Cực</text>
 </svg>
