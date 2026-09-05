@@ -84,12 +84,16 @@
   <!-- ============ Big Dipper (chom sao Bac Dau), real RA/Dec, ============
        polar-azimuthal projection centered on the true north celestial pole:
        r = (90 - Dec) * 6.2 px/deg, theta = RA. Verified against Wikipedia
-       infobox coordinates for all 7 stars + Polaris (J2000).
+       infobox coordinates for all 7 stars (J2000).
 
-       Rotated 90deg and shifted to the left edge via a single group
-       transform: the star/line coordinates below are untouched so they
-       still match the RA/Dec math above; only the <g> repositions them. -->
-  <g transform="translate(-319.1,0) rotate(90,569.1,568.2)">
+       Rotated 90deg, scaled up 1.35x about its own centroid, and shifted
+       to the left margin via a single group transform: the star/line
+       coordinates below are untouched so they still match the RA/Dec math
+       above; only the <g> repositions/resizes them. Polaris itself is laid
+       out separately in the right margin (see below) rather than at its
+       true relative distance, so the pointer line reads clearly across
+       the page instead of the two ending up just ~180px apart. -->
+  <g transform="translate(-408.0,-94.8) rotate(90,578.0,664.8) translate(578.0,664.8) scale(1.35) translate(-578.0,-664.8)">
 
     <!-- asterism outline: handle (Alkaid-Mizar-Alioth-Megrez) + bowl (Megrez-Dubhe-Merak-Phecda-Megrez) -->
     <path class="star-line" d="M485.9,685.0 L522.1,663.0 L550.7,665.2 L586.3,663.9 L642.6,629.9 L652.3,661.8 L606.1,685.0 L586.3,663.9" />
@@ -105,25 +109,27 @@
     <circle class="dipper-star" cx="550.7" cy="665.2" r="4" />   <!-- Alioth, mag 1.8 -->
     <circle class="dipper-star" cx="522.1" cy="663.0" r="3.5" /> <!-- Mizar, mag 2.1 -->
     <circle class="dipper-star" cx="485.9" cy="685.0" r="3.8" /> <!-- Alkaid, mag 1.9 -->
-
-    <!-- animated pointer line: grows from Dubhe to Polaris (5x the pointer
-         distance, per the real navigation method), holds, fades, repeats -->
-    <line x1="642.6" y1="629.9" x2="642.6" y2="629.9" stroke="#e8c76a" stroke-width="1.4" stroke-dasharray="3 4" opacity="0">
-      <animate attributeName="x2" values="642.6;642.6;602.8;602.8;642.6" keyTimes="0;0.05;0.45;0.85;1" dur="6s" repeatCount="indefinite" />
-      <animate attributeName="y2" values="629.9;629.9;456.4;456.4;629.9" keyTimes="0;0.05;0.45;0.85;1" dur="6s" repeatCount="indefinite" />
-      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.05;0.15;0.75;0.85;1" dur="6s" repeatCount="indefinite" />
-    </line>
-
-    <!-- Polaris: real coordinates, ~0.7deg from the true pole -->
-    <circle cx="602.8" cy="456.4" r="9" fill="#f4d47c" opacity="0.18">
-      <animate attributeName="opacity" values="0.18;0.18;0.4;0.4;0.18;0.18" keyTimes="0;0.4;0.47;0.75;0.82;1" dur="6s" repeatCount="indefinite" />
-    </circle>
-    <circle cx="602.8" cy="456.4" r="4.5" fill="#f4d47c">
-      <animate attributeName="r" values="4.5;4.5;7.2;7.2;4.5;4.5" keyTimes="0;0.4;0.47;0.75;0.82;1" dur="6s" repeatCount="indefinite" />
-    </circle>
   </g>
 
-  <!-- labels kept upright (outside the rotated group), repositioned next to their now-vertical subjects -->
-  <text class="label" x="40" y="700">Chòm Bắc Đẩu (Big Dipper)</text>
-  <text class="label-polaris" x="376" y="598">Polaris — Sao Bắc Cực</text>
+  <!-- animated pointer line: grows from the transformed Dubhe position
+       out to Polaris in the right margin, holds, fades, repeats. Lives
+       outside the <g> above since its target (Polaris) isn't part of
+       that transform. -->
+  <line x1="217.1" y1="657.2" x2="217.1" y2="657.2" stroke="#e8c76a" stroke-width="1.6" stroke-dasharray="3 4" opacity="0">
+    <animate attributeName="x2" values="217.1;217.1;1087;1087;217.1" keyTimes="0;0.05;0.45;0.85;1" dur="6s" repeatCount="indefinite" />
+    <animate attributeName="y2" values="657.2;657.2;380;380;657.2" keyTimes="0;0.05;0.45;0.85;1" dur="6s" repeatCount="indefinite" />
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.05;0.15;0.75;0.85;1" dur="6s" repeatCount="indefinite" />
+  </line>
+
+  <!-- Polaris: placed in the right margin, sized up a bit to match the larger dipper -->
+  <circle cx="1087" cy="380" r="11" fill="#f4d47c" opacity="0.18">
+    <animate attributeName="opacity" values="0.18;0.18;0.4;0.4;0.18;0.18" keyTimes="0;0.4;0.47;0.75;0.82;1" dur="6s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="1087" cy="380" r="5.5" fill="#f4d47c">
+    <animate attributeName="r" values="5.5;5.5;8.8;8.8;5.5;5.5" keyTimes="0;0.4;0.47;0.75;0.82;1" dur="6s" repeatCount="indefinite" />
+  </circle>
+
+  <!-- labels kept upright, centered under each cluster so they fit the narrow page margins -->
+  <text class="label" x="112" y="700" text-anchor="middle">Chòm Bắc Đẩu (Big Dipper)</text>
+  <text class="label-polaris" x="1087" y="418" text-anchor="middle">Polaris — Sao Bắc Cực</text>
 </svg>
